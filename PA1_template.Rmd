@@ -3,6 +3,13 @@ title: "Reproducible Research: Peer Assessment 1"
 output: 
   html_document:
     keep_md: true
+    theme: paper 
+    toc: true
+    toc_float: true
+editor_options: 
+  chunk_output_type: inline
+  fig_width: 6 
+  fig_height: 3
 ---
 
 

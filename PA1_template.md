@@ -3,6 +3,13 @@ title: "Reproducible Research: Peer Assessment 1"
 output: 
   html_document:
     keep_md: true
+    theme: paper 
+    toc: true
+    toc_float: true
+editor_options: 
+  chunk_output_type: inline
+  fig_width: 6 
+  fig_height: 3
 ---
 
 
@@ -13,28 +20,41 @@ output:
 
 ```r
 library("data.table")
+```
+
+```
+## Warning: package 'data.table' was built under R version 4.0.5
+```
+
+```r
 library(ggplot2)
 ```
 
 ```
-## Warning: package 'ggplot2' was built under R version 4.0.4
+## Warning: package 'ggplot2' was built under R version 4.0.5
 ```
 
 ```r
 library(readr)
+```
 
+```
+## Warning: package 'readr' was built under R version 4.0.5
+```
 
+```r
 activity <- read_csv("data/activity.csv")
 ```
 
 ```
-## 
+## Rows: 17568 Columns: 3
 ## -- Column specification --------------------------------------------------------
-## cols(
-##   steps = col_double(),
-##   date = col_date(format = ""),
-##   interval = col_double()
-## )
+## Delimiter: ","
+## dbl  (2): steps, interval
+## date (1): date
+## 
+## i Use `spec()` to retrieve the full column specification for this data.
+## i Specify the column types or set `show_col_types = FALSE` to quiet this message.
 ```
 2. Process/transform the data (if necessary) into a format suitable for your analysis
 
